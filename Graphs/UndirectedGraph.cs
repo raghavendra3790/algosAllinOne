@@ -5,11 +5,15 @@ namespace Graphs
 {
     public class UndirectedGraph
     {
+        /// <summary>
+        /// Vetices counting starts from 1
+        /// </summary>
+        /// <param name="vertices"></param>
         public UndirectedGraph(int vertices)
         {
             Vertices = vertices;
-            _adj = new List<int>[vertices];
-            for (int i = 0; i < vertices; i++)
+            _adj = new List<int>[vertices+1];
+            for (int i = 0; i <= vertices; i++)
             {
                 _adj[i] = new List<int>();
             }
@@ -38,7 +42,7 @@ namespace Graphs
 
         private void CheckRangeAndThrow(int v)
         {
-            if (v < 0 || v > Vertices - 1)
+            if (v <= 0 || v > Vertices)
             {
                 throw new ArgumentException("V");
             }
