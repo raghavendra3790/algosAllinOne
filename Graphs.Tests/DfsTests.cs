@@ -10,7 +10,7 @@ namespace Graphs.Tests
         [TestMethod]
         public void TestDFSHasPathSuccess()
         {
-            UndirectedGraph g = BuildGraph();
+            UndirectedGraph g = UndirectedGraphSetUp.BuildGraph();
             DFS dfs = new DFS(g, 1);
             Assert.IsTrue(dfs.HasPath(2));
             Assert.IsTrue(dfs.HasPath(4));
@@ -24,7 +24,7 @@ namespace Graphs.Tests
         [TestMethod]
         public void TestDFSPathSuccess()
         {
-            UndirectedGraph g = BuildGraph();
+            UndirectedGraph g = UndirectedGraphSetUp.BuildGraph();
             DFS dfs = new DFS(g, 1);
 
             List<int> pathTo5 = dfs.Path(5);
@@ -32,25 +32,6 @@ namespace Graphs.Tests
             Assert.IsTrue(pathTo5.Contains(1));
 
             Assert.IsFalse(pathTo5.Contains(4));
-        }
-
-        /// Build a graph which looks like
-        ///             1
-        ///         /       
-        ///        2        3
-        ///        /\       /\
-        ///        4 5      6 7
-        private UndirectedGraph BuildGraph()
-        {
-            Graphs.UndirectedGraph ug = new UndirectedGraph(7);
-            ug.AddEdge(1, 2);
-            ug.AddEdge(2, 4);
-            ug.AddEdge(2, 5);
-
-            ug.AddEdge(3, 6);
-            ug.AddEdge(3, 7);
-
-            return ug;
         }
     }
 }

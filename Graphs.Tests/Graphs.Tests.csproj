@@ -50,8 +50,10 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BFSTests.cs" />
     <Compile Include="DfsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UndirectedGraphSetUp.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Graphs\Graphs.csproj">
