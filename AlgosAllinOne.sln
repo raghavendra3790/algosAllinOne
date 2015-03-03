@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphs", "Graphs\Graphs.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphs.Tests", "Graphs.Tests\Graphs.Tests.csproj", "{C181AFD0-B32F-4AB0-8520-6465031FABFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringAlgorithms", "StringAlgorithms\StringAlgorithms.csproj", "{8AF64928-9BD8-47AE-91BA-D6DA08B60B6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringAlgorithms.Tests", "StringAlgorithms.Tests\StringAlgorithms.Tests.csproj", "{ADFF6DD2-0502-437C-9954-33DED0D4692E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{C181AFD0-B32F-4AB0-8520-6465031FABFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C181AFD0-B32F-4AB0-8520-6465031FABFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C181AFD0-B32F-4AB0-8520-6465031FABFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF64928-9BD8-47AE-91BA-D6DA08B60B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF64928-9BD8-47AE-91BA-D6DA08B60B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF64928-9BD8-47AE-91BA-D6DA08B60B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF64928-9BD8-47AE-91BA-D6DA08B60B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADFF6DD2-0502-437C-9954-33DED0D4692E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADFF6DD2-0502-437C-9954-33DED0D4692E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADFF6DD2-0502-437C-9954-33DED0D4692E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADFF6DD2-0502-437C-9954-33DED0D4692E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
